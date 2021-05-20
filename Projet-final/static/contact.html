@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style/contact.css')}}">
+
+    </head>
+    <body>
+		        <div class="topnav">
+			<a href="{{url_for('templates', filename='index.html')}}">Meteo</a>
+            <a href="{{url_for('static', filename='contact.html')}}">Contact</a>
+            <a href="{{url_for('static', filename='en_savoir_plus.html')}}">En savoir plus</a>
+    
+		<h2 class="weatherText">Contact</h2>
+        <div class="box">
+            
+            <p class="texte">
+                <div class="espace">
+					
+                    <div class="box">
+            <form action="/meteo" method="POST">
+                <div class="case">
+                    <div class="label_box">
+						
+                        <label for="Prenom">Prenom :</label>
+    
+                        <input type="text" name="Prenom" >
+						
+                    </div>
+               
+				
+                <br>
+				
+                 <div class="box">
+            <form action="/meteo" method="POST">
+                <div class="case">
+                    <div class="label_box">
+						
+                        <label for="Nom">Nom :</label>
+
+                     <input type="text" name="Nom">
+                    </div>
+                </div>
+
+                </div>
+				
+                <br>
+				
+                     <div class="box">
+            <form action="/meteo" method="POST">
+                <div class="case">
+                    <div class="label_box">
+						
+                        <label for="msg">Message à laisser :</label>
+
+                        <input type="text" name="msg" style="height:180px;">
+                    </div>
+                </div>
+
+                </div>
+            
+            </p>
+            
+        </div>
+    	<button class="button" type="submit"><span>Envoyer</span></button>
+    </body>
+</html>

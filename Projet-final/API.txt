@@ -1,0 +1,4 @@
+[openweathermap]
+
+
+api = fe7d917990e0e224e806b61685b694ac

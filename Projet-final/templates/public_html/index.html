@@ -1,0 +1,24 @@
+<html>
+    
+<head>
+    <title>Meteo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="topnav">
+            <a class="active" href="#home">Meteo</a>
+            <a href="{{url_for('static', filename='contact.html')}}">Contact</a>
+            <a href="{{url_for('static', filename='en_savoir_plus.html')}}">En savoir plus</a>
+            
+<h2 class="Bulletin">Bulletin Meteo</h2>
+
+    
+<form class="Bulletin" id="Bulletin" action="{{ url_for('render_results') }}" method="post">
+    Code Postal: <input class="Bulletin" id="weatherInput" type="text" name="Code Postal"><br>
+    <input class="Bulletin" id="weatherSubmit" type="submit" value="Rechercher">
+
+</form>
+</body>
+</html>
